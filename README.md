@@ -37,10 +37,37 @@ The models are then compiled with an ADAM optimizer and loss function. Finally, 
 
 We then save the models so that we can use them for prediction with our own handwritten images, which the models have not seen before. Using these final models we will make predictions on the sequence of input character images, pass the prediction outputs to the DeepL API to get the English translation for the respective inputs. We then show the user the output Japanese text and its translation.
 
-# RESULTS:
+## RESULTS:
 
+### CNN:
+Accuracy and loss plots for the base CNN model:
 
-# REFERENCES:
+![CNN Accuracy](/images/1.png)
+![CNN Loss](/images/2.png)
+
+### AlexNet:
+Accuracy and loss plots for the AlexNet model:
+
+![AlexNet Accuracy](/images/3.png)
+![AlexNet Loss](/images/4.png)
+
+### VGGNet:
+Accuracy and loss plots for the VGGNet model:
+
+![VGGNet Accuracy](/images/5.png)
+![VGGNet Loss](/images/6.png)
+
+### PREDICTION and DEEPL API:
+
+Here is an example input array to the model:
+
+![Input array to the model](/images/7.png)
+
+An example translation from the DeepL translation API:
+
+![Translation](/images/8.png)
+
+## REFERENCES:
 [1] Aramaki, Y., Matsui, Y., and Aizawa, K. 2016. Text detection in manga by combining connected-component-based and region-based classifications. In 2016 IEEE International Conference on Image Processing (ICIP): 2901-2905. doi.org/10.1109/ICIP.2016.7532890. 
 
 [2] Tsai, C. 2016. Recognizing Handwritten Japanese Characters Using Deep Convolutional Neural Networks. Palo Alto, CA: Stanford University, Department of Chemical Engineering
